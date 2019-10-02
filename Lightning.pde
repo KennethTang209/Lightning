@@ -19,10 +19,10 @@ void draw()
   vertex(200,200);
   endShape(CLOSE);
   ellipse(200,150,20,100);
-  
-  stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-  while(startY < 300){
-    endX += (int)(Math.random()*9);
+ 
+  while(startX < 700){
+    stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+    endX += (int)(Math.random()*20);
     endY += (int)((Math.random()*18)-9);
     line(startX,startY,endX,endY);
     startX = endX;
