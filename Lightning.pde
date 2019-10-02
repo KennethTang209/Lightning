@@ -6,18 +6,20 @@ int endY = 150;
 void setup()
 {
     size(700,300);
-    strokeWeight(5);
+    strokeWeight(4);
     background(127);
+    textSize(10);
 }
 void draw()
 {
-  beginShape();
-  stroke(0); 
+  stroke(0);
+  beginShape(); 
   vertex(50,150);
   vertex(200,100);
   vertex(200,200);
   endShape(CLOSE);
   ellipse(200,150,20,100);
+  
   stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
   while(startY < 300){
     endX += (int)(Math.random()*9);
@@ -29,8 +31,8 @@ void draw()
 }
 void mousePressed()
 {
-  startX = 200;
-  startY = 150;
-  endX = 200;
-  endY = 150;
+  startX = 210;
+  startY = 150 + (int)(Math.random()*18-9);
+  endX = 210;
+  endY = startY;
 }
