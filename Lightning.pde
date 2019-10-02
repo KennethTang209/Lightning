@@ -12,7 +12,7 @@ void setup()
 void draw()
 {
   beginShape();
-  stroke(0);
+  stroke(0); 
   vertex(50,150);
   vertex(200,100);
   vertex(200,200);
